@@ -31,7 +31,7 @@ const server = app.listen(process.env.PORT, () =>
 const io = socket(server, {
   cors: {
     origin: "https://chatease-frontend.vercel.app/",
-    credentials: false,
+    credentials: true,
   },
 });
 
